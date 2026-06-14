@@ -6,10 +6,14 @@ Accented Hardware Sliders: Real-time dials (Volume, Pan, Pitch, and Start Timeli
 Vector Waveforms: Standardized, responsive, custom-colored SVG waveforms render relative peak vectors dynamically based on decoded channels, bypassing heavy canvas redraws.
 Glowing Digital Clock: Digital LCD panel displays playhead location and project limits with monospace green glow indicators.
 🚀 Implementation Highlights
+
 Top Menu & Command Panels
 File Panel: Supports synthesizing live demo tracks, importing local files, and triggering high-quality offline mix rendering.
+
 View Panel: Toggles the chronological layout grid and scales viewport heights (Compact, Standard, and Lush modes) dynamically using Signals.
+
 Effects Master Processing Rack: A collapsible left sidebar provides real-time faders and active bypass triggers on the Master FX node stream.
+
 About Info Base: Explains the Web Audio DSP routing pipeline and extraction mechanics in an elegant overlay card.
 Multi-Track Core Audio Engine ("Add Track")
 Manage multiple audio lanes with separate state tracking (Name, Buffer, Volume, Stereo Pan, Pitch Shift Semitones, Start Offset delay, Mute, and Solo).
