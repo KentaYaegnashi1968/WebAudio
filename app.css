@@ -1,0 +1,112 @@
+/* CUSTOM COMPONENT STYLING FOR DAW WORKSPACE */
+
+/* Thin, compact scrollbars to maximize workspace space */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b; /* zinc-950 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a; /* zinc-800 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46; /* zinc-700 */
+}
+
+/* Keyframe animations for panel entries */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.18s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Hardware style sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #18181b; /* zinc-900 */
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Webkit browser slider thumbs */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #09090b;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.1s, background-color 0.15s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+input[type="range"].accent-emerald-500::-webkit-slider-thumb {
+  background: #10b981; /* emerald-500 */
+}
+
+input[type="range"].accent-indigo-400::-webkit-slider-thumb {
+  background: #818cf8; /* indigo-400 */
+}
+
+input[type="range"].accent-amber-400::-webkit-slider-thumb {
+  background: #fbbf24; /* amber-400 */
+}
+
+input[type="range"].accent-sky-400::-webkit-slider-thumb {
+  background: #38bdf8; /* sky-400 */
+}
+
+input[type="range"].accent-cyan-400::-webkit-slider-thumb {
+  background: #22d3ee; /* cyan-400 */
+}
+
+input[type="range"].accent-violet-400::-webkit-slider-thumb {
+  background: #a78bfa; /* violet-400 */
+}
+
+/* Firefox slider thumbs */
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #09090b;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: currentColor;
+}
+
+input[type="range"]:focus {
+  background: #202024;
+}
+
+/* Waveform glowing effect on hover */
+.waveform-container:hover {
+  filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.2));
+}
+
+/* Custom background for timeline ticks */
+.timeline-tick-glow {
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.05) 0%, transparent 100%);
+}
