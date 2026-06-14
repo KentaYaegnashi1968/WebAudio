@@ -27,3 +27,10 @@ Physical Vector Reversing ("Add Reverse")
 Clones audio channels and mirrors floating-point vectors physically inside a cached reversed duplicate buffer. Flipping the reverse toggle hotswaps the source buffer immediately to flow backwards.
 Offline Mix & WAV Compiler ("Add Audio Export")
 Tapping Export WAV creates an OfflineAudioContext scaling to the highest track end time. It schedules and renders all concurrent track offsets, volumes, panning, and rate-stretching, and encodes the finished 32-bit float matrix into a standard 16-bit PCM CD-quality WAV file.
+
+-----------
+
+# Dated Joined
+
+14 June 2026
+Published: Yes
